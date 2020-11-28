@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Помощник кардиолога</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all">
+<script type="text/javascript" src="view.js"></script>
+
+</head>
+
+<body>
+<div class="col-md-12">
+<table class="table table-striped table-bordered">
+<thead class="thead-dark">
+<tr>
+<th>#ID</th>
+<th>Город/село</th>
+<th>Дата рождения</th>
+<th>Возраст</th>
+<th>--||--</th>
+</tr>
+</thead>
+<tbody>
+{% if patients_list %}
+    <tr>
+{% for patient in patients_list %}	
+    <td>{{ patient.id  }}</td>
+    <td>{{ patient.area }}</td>
+    <td>{{ patient.birthdate }}</td>
+    <td>{{ patient.age }}</td>
+    <td><a href="{#% url 'cardiohelper:detail' patient.id %}"><input type="button" value="ПОДРОБНО"></td>
+    </tr>   
+{% endfor %}
+
+{% else %}
+    <p>Справочник пуст</p>
+{% endif %}
+</tbody>
+</table>
+</div>
+</body>
