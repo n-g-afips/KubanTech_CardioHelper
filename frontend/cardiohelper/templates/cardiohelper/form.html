@@ -1,0 +1,1053 @@
+{% load static %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+  <title>Помощник кардиолога</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'cardiohelper/style.css' %}" media="all" />
+  <script type="text/javascript" src="{% static 'cardiohelper/view.js' %}"></script>
+</head>
+
+<body id="main_body"> <img id="top" src="{% static 'cardiohelper/top.png' %}" alt="" />
+  <div id="form_container">
+    <h1><a>Помощник кардиолога</a></h1>
+    <form id="form_8082" class="appnitro" method="post" action="">
+      <div class="tab">
+        <div class="form_description">
+          <h2>Помощник кардиолога</h2>
+          <p>Для расчета фактора риска заполните форму</p>
+        </div>
+        <ul>
+          <li id="li_1">
+            <label class="description" for="element_1">Возраст </label>
+            <div>
+              <input id="element_1" name="e1" class="element text medium" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_2">
+            <label class="description" for="element_2">Проживаю в: </label> <span> <input id="element_2_1" name="e0"
+                                class="element radio" value="1" type="radio" />
+                              <label class="choice" for="element_2_1">В городе</label>
+                              <input id="element_2_2" name="element_2" class="element radio"
+                                value="2" type="radio" /> <label class="choice"
+                                for="element_2_2">В селе</label> </span> </li>
+          <li id="li_6">
+            <label class="description" for="element_6">Работа </label> <span> <input id="element_6_1" name="element_6"
+                                class="element radio" value="1" type="radio" />
+                              <label class="choice" for="element_6_1">Не работаю</label>
+                              <input id="element_6_2" name="element_6" class="element radio"
+                                value="2" type="radio" /> <label class="choice"
+                                for="element_6_2">Работаю</label> <input id="element_6_3"
+                                name="element_6" class="element radio" value="3"
+                                type="radio" /> <label class="choice" for="element_6_3">Пенсионер</label>
+                              <input id="element_6_4" name="element_6" class="element radio"
+                                value="4" type="radio" /> <label class="choice"
+                                for="element_6_4">Нетрудоспособен</label> </span> </li>
+          <li class="section_break">
+            <h3>Анамнез </h3>
+            <p></p>
+          </li>
+          <li id="li_7">
+            <label class="description" for="element_7">Заболевания: </label> <span> <input id="element_7_1" name="element_7_1"
+                                class="element checkbox" value="1" type="checkbox" />
+                              <label class="choice" for="element_7_1">Гепатит</label>
+                              <input id="element_7_2" name="element_7_2" class="element checkbox"
+                                value="1" type="checkbox" /> <label class="choice"
+                                for="element_7_2">Рак</label> <input id="element_7_3"
+                                name="element_7_3" class="element checkbox" value="1"
+                                type="checkbox" /> <label class="choice" for="element_7_3">Заболевание
+                                легких</label> <input id="element_7_4" name="element_7_4"
+                                class="element checkbox" value="1" type="checkbox" />
+                              <label class="choice" for="element_7_4">Астма</label>
+                              <input id="element_7_5" name="element_7_5" class="element checkbox"
+                                value="1" type="checkbox" /> <label class="choice"
+                                for="element_7_5">Туберкулез</label> <input id="element_7_6"
+                                name="element_7_6" class="element checkbox" value="1"
+                                type="checkbox" /> <label class="choice" for="element_7_6">СПИД</label>
+                            </span> </li>
+          <li class="section_break">
+            <h3>Прием лекарств:</h3>
+            <p></p>
+          </li>
+          <li id="li_8">
+            <label class="description" for="element_8">Виды: </label> <span> <input id="element_8_1" name="element_8_1"
+                                class="element checkbox" value="1" type="checkbox" />
+                              <label class="choice" for="element_8_1">Давление</label>
+                              <input id="element_8_2" name="element_8_2" class="element checkbox"
+                                value="1" type="checkbox" /> <label class="choice"
+                                for="element_8_2">Холестерин</label> <input id="element_8_3"
+                                name="element_8_3" class="element checkbox" value="1"
+                                type="checkbox" /> <label class="choice" for="element_8_3">Инсульт</label>
+                              <input id="element_8_4" name="element_8_4" class="element checkbox"
+                                value="1" type="checkbox" /> <label class="choice"
+                                for="element_8_4">Сахароснижающее</label> <input
+                                id="element_8_5" name="element_8_5" class="element checkbox"
+                                value="1" type="checkbox" /> <label class="choice"
+                                for="element_8_5">Астма</label> <input id="element_8_6"
+                                name="element_8_6" class="element checkbox" value="1"
+                                type="checkbox" /> <label class="choice" for="element_8_6">Прочее</label>
+                            </span> </li>
+          <li class="section_break">
+            <h3>Вредные привычки</h3>
+            <p></p>
+          </li>
+          <li id="li_18">
+            <label class="description" for="element_18"> </label> <span> <input id="element_18_1" name="element_18_1"
+                                class="element checkbox" value="1" type="checkbox" />
+                              <label class="choice" for="element_18_1">Курю</label>
+                            </span> </li>
+          <li id="li_9">
+            <label class="description" for="element_9">Сколько сигарет в день </label>
+            <div>
+              <input id="element_9" name="element_9" class="element text medium" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_19">
+            <label class="description" for="element_19">Алкоголь </label> <span> <input id="element_19_1" name="element_19"
+                                class="element radio" value="1" type="radio" />
+                              <label class="choice" for="element_19_1">Никогда
+                                не употреблял</label> <input id="element_19_2"
+                                name="element_19" class="element radio" value="2"
+                                type="radio" /> <label class="choice" for="element_19_2">Ранее
+                                употреблял</label> <input id="element_19_3" name="element_19"
+                                class="element radio" value="3" type="radio" />
+                              <label class="choice" for="element_19_3">Употребляю
+                                в настоящее время</label> </span> </li>
+          <li class="section_break">
+            <h3>Напитки:</h3>
+            <p></p>
+          </li>
+          <li id="li_11">
+            <label class="description" for="element_11">Водка, гр. в день </label>
+            <div>
+              <input id="element_11" name="element_11" class="element text medium" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_12">
+            <label class="description" for="element_12">Вино, гр. в день </label>
+            <div>
+              <input id="element_12" name="element_12" class="element text medium" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_13">
+            <label class="description" for="element_13">Пиво, гр. в день </label>
+            <div>
+              <input id="element_13" name="element_13" class="element text medium" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_14">
+            <label class="description" for="element_14">Самогон, гр. в день </label>
+            <div>
+              <input id="element_14" name="element_14" class="element text medium" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_15">
+            <label class="description" for="element_15">Красное вино, гр. в день </label>
+            <div>
+              <input id="element_15" name="element_15" class="element text medium" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li class="section_break">
+            <h3>Отдых</h3>
+            <p></p>
+          </li>
+          <li id="li_17">
+            <label class="description" for="element_17">Сон, часов </label>
+            <div>
+              <input id="element_17" name="element_17" class="element text medium" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li class="buttons">
+            <input name="form_id" value="8082" type="hidden" />
+            <input id="saveForm" class="button_text" name="submit" value="Рассчитать" type="submit" /> </li>
+        </ul>
+      </div>
+      <div class="tab">
+        <div class="form_description">
+          <h2>Помощник кардиолога</h2>
+          <p>Для расчета фактора риска заполните форму. Часть 2. Психологический опросник. Стрессовые ситуации</p>
+        </div>
+        <ul>
+          <li id="li_1">
+            <label class="description" for="element_1">Люди обычно честные </label>
+            <div>
+              <select class="element select medium" id="element_1" name="element_1">
+                <option value="" selected="selected"></option>
+                <option value="1">Полностью согласен</option>
+                <option value="2">Частично согласен</option>
+                <option value="3">Частично не согласен</option>
+                <option value="4">Полностью не согласен</option>
+                <option value="5">нет ответа</option>
+              </select>
+            </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Если я делаю..</label>
+            <div>
+              <select class="element select medium" id="element_1" name="element_1">
+                <option value="" selected="selected"></option>
+                <option value="1">Полностью согласен</option>
+                <option value="2">Частично согласен</option>
+                <option value="3">Частично не согласен</option>
+                <option value="4">Полностью не согласен</option>
+                <option value="5">нет ответа</option>
+              </select>
+            </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Реклама,масло </label>
+            <div>
+              <select class="element select medium" id="element_1" name="element_1">
+                <option value="" selected="selected"></option>
+                <option value="1">Полностью согласен</option>
+                <option value="2">Частично согласен</option>
+                <option value="3">Частично не согласен</option>
+                <option value="4">Полностью не согласен</option>
+                <option value="5">нет ответа</option>
+              </select>
+            </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Реклама,мука</label>
+            <div>
+              <select class="element select medium" id="element_1" name="element_1">
+                <option value="" selected="selected"></option>
+                <option value="1">Полностью согласен</option>
+                <option value="2">Частично согласен</option>
+                <option value="3">Частично не согласен</option>
+                <option value="4">Полностью не согласен</option>
+                <option value="5">нет ответа</option>
+              </select>
+            </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Реклама,рис</label>
+            <div>
+              <select class="element select medium" id="element_1" name="element_1">
+                <option value="" selected="selected"></option>
+                <option value="1">Полностью согласен</option>
+                <option value="2">Частично согласен</option>
+                <option value="3">Частично не согласен</option>
+                <option value="4">Полностью не согласен</option>
+                <option value="5">нет ответа</option>
+              </select>
+            </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Реклама,безалкоголь </label>
+            <div>
+              <select class="element select medium" id="element_1" name="element_1">
+                <option value="" selected="selected"></option>
+                <option value="1">Полностью согласен</option>
+                <option value="2">Частично согласен</option>
+                <option value="3">Частично не согласен</option>
+                <option value="4">Полностью не согласен</option>
+                <option value="5">нет ответа</option>
+              </select>
+            </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Реклама,снеки</label>
+            <div>
+              <select class="element select medium" id="element_1" name="element_1">
+                <option value="" selected="selected"></option>
+                <option value="1">Полностью согласен</option>
+                <option value="2">Частично согласен</option>
+                <option value="3">Частично не согласен</option>
+                <option value="4">Полностью не согласен</option>
+                <option value="5">нет ответа</option>
+              </select>
+            </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Реклама,сигареты</label>
+            <div>
+              <select class="element select medium" id="element_1" name="element_1">
+                <option value="" selected="selected"></option>
+                <option value="1">Полностью согласен</option>
+                <option value="2">Частично согласен</option>
+                <option value="3">Частично не согласен</option>
+                <option value="4">Полностью не согласен</option>
+                <option value="5">нет ответа</option>
+              </select>
+            </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Реклама,алкоголь</label>
+            <div>
+              <select class="element select medium" id="element_1" name="element_1">
+                <option value="" selected="selected"></option>
+                <option value="1">Полностью согласен</option>
+                <option value="2">Частично согласен</option>
+                <option value="3">Частично не согласен</option>
+                <option value="4">Полностью не согласен</option>
+                <option value="5">нет ответа</option>
+              </select>
+            </div>
+          </li>
+          <li class="section_break">
+            <h3>Стрессовые ситуации</h3>
+            <p></p>
+          </li>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">36. Потеря работы</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">36. Выход на пенсию</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">36. Грабеже </label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">36. Развод</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">36. Конфликт в семье</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">36. Болезнь</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">36. Насилие </label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">36. Война</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">36 Смерть супруга(и)</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">36.Смерть близкого</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">36. Иной стресс</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">36. Свадьба</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">36. Новая работа</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">36.Рождение ребенка</label>
+          <input id="element_8_1" name="element_8_1" class="element
+                      checkbox" type="checkbox" value="1">
+          <label class="choice" for="element_8_1">36.Отделение от семьи</label>
+          <input id="element_8_1" name="element_8_1" class="element
+                      checkbox" type="checkbox" value="1" />
+          <label class="choice" for="element_8_1">36.Голод</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Стресс на работе</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Стресс дома </label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Стресс из-за финансов</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Депрессия</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Депрессия a </label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Депрессия b </label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Депрессия c </label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Депрессия d </label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Депрессия e </label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Депрессия f </label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Депрессия g </label>
+          <li class="section_break">
+            <h3>Наследственный фактор</h3>
+            <p></p>
+          </li>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Диабет у отца</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Диабет у матери</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Диабет у брата/сестры</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">ИБС у отца</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">ИБС у матери</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">ИБС у брата/сестры</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">АГ у отца</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">АГ у матери</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">АГ у брата/сестры</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Инсульт у отца</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Инсульт у матери</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Инсульт у брата/сестры</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Рак у отца</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Рак у матери</label>
+          <input id="element_8_1" name="element_8_1" class="element checkbox" value="1" type="checkbox" />
+          <label class="choice" for="element_8_1">Рак у брата/сестры</label>
+        </ul>
+      </div>
+      <div class="tab">
+        <div class="form_description">
+          <h2>Помощник кардиолога</h2>
+          <p>Для расчета фактора риска заполните форму. Часть 3. Анализы и обследование</p>
+        </div>
+        <ul>
+          <li id="li_1">
+            <label class="description" for="element_1">САД1 </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">ДАД1 </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">САД2 </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">ДАД2 </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">ЧСС1 </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">ЧСС2 </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">ОТ1 </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">ОТ2 </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">ОБ1 </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">ОБ2 </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Вес </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Рост </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Плечо </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Голень </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Голова </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Сила левая 1 </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Сила левая 2</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Сила левая 3</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Сила правая 1</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Сила правая 2</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Сила правая 3</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">FEV1</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">FEV1%</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">FVC</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">FVC%</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">PEFR</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">PEFR%</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Глюкоза</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Холестерин</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Триглицериды</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">ЛПВП</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">ЛПНП</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Натрий</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Калий </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Креатинин </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Полный вес</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">% жира</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">% воды</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Мыш. масса</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Физ. состояние</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">BMR</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Метаб. возраст </label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Кост. масса</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Доля внутр. жира</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">ЭКГ норма</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" type="text" maxlength="255" value="" /> </div>
+          </li>
+        </ul>
+      </div>
+      <div class="tab">
+        <div class="form_description">
+          <h2>Помощник кардиолога</h2>
+          <p>Для расчета фактора риска заполните форму. Часть 4. Образ жизни (физическая активность и питание)</p>
+        </div>
+        <ul>
+          <li id="li_1">
+            <label class="description" for="element_1">Тяжелый труд на работе, дни</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Тяжелый труд на работе, часы</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Тяжелый труд на работе, минуты</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Средний труд на работе, дни</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Средний труд на работе, часы</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Средний труд на работе, минуты</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Пешком на работе, дни</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Пешком на работе, часы</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Пешком на работе, минуты</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Авто, дни</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Авто, часы</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Авто, минуты</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Велосипед, дни</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Велосипед, часы</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Велосипед, минуты</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Пешком, дни</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Пешком часы</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Пешком, минуты</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Тяжелый труд в саду, дни</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Тяжелый труд в саду, часы</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Тяжелый труд в саду, минуты</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Средний труд в саду, дни</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Средний труд в саду, часы</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Средний труд в саду, минуты</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Средний труд дома, дни</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Средний труд дома, часы</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Средний труд дома, минуты</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Пешком, дни</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Пешком часы</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Пешком, минуты</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Тяжелый спорт, дни</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Тяжелый спорт, часы</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Тяжелый спорт, минуты</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Средний спорт, дни</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Средний спорт, часы</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Средний спорт, минуты</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Сидя на работе, часы</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Сидя на работе, минуты</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Сидя дома, часы</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Сидя дома, минуты</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li class="section_break">
+            <h3>Питание</h3>
+            <p></p>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Вода</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Белки</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Жиры</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">НЖК</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">ПНЖК</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Холестерин</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Моно-дисахариды</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Крахмал</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Углеводы</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Волокна</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Орг.кислоты</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Зола</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Na</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">K</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Ca</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Mg</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">P</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Fe</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">A</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Бета-каротин</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Ретинол</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Токоферол</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">В1</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">В2</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">РР</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Ниацин</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">С</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">Алкоголь</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+          <li id="li_1">
+            <label class="description" for="element_1">ЭЦ,ккал</label>
+            <div>
+              <input id="element_1" name="element_1" class="element text small" maxlength="255" value="" type="text" /> </div>
+          </li>
+        </ul>
+      </div>
+      <div style="overflow:auto;">
+        <div style="float:right;">
+          <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+          <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px;"> <span class="step"></span> <span class="step"></span> <span class="step"></span> <span class="step"></span> </div>
+    </form>
+    <div id="footer"> Made by KubanTech Team </div>
+  </div> <img id="bottom" src="{% static 'cardiohelper/bottom.png' %}" alt="" />
+  <script>
+    var currentTab = 0; // Current tab is set to be the first tab (0)
+    showTab(currentTab); // Display the current tab
+    function showTab(n) {
+      // This function will display the specified tab of the form...
+      var x = document.getElementsByClassName("tab");
+      x[n].style.display = "block";
+      //... and fix the Previous/Next buttons:
+      if (n == 0) {
+        document.getElementById("prevBtn").style.display = "none";
+      } else {
+        document.getElementById("prevBtn").style.display = "inline";
+      }
+      if (n == (x.length - 1)) {
+        document.getElementById("nextBtn").innerHTML = "Submit";
+      } else {
+        document.getElementById("nextBtn").innerHTML = "Next";
+      }
+      //... and run a function that will display the correct step indicator:
+      fixStepIndicator(n)
+    }
+
+    function nextPrev(n) {
+      // This function will figure out which tab to display
+      var x = document.getElementsByClassName("tab");
+      // Exit the function if any field in the current tab is invalid:
+      //if (n == 1 && !validateForm()) return false;
+      // Hide the current tab:
+      x[currentTab].style.display = "none";
+      // Increase or decrease the current tab by 1:
+      currentTab = currentTab + n;
+      // if you have reached the end of the form...
+      if (currentTab >= x.length) {
+        // ... the form gets submitted:
+        document.getElementById("form_8082").submit();
+        return false;
+      }
+      // Otherwise, display the correct tab:
+      showTab(currentTab);
+    }
+
+    function validateForm() {
+      // This function deals with validation of the form fields
+      var x, y, i, valid = true;
+      x = document.getElementsByClassName("tab");
+      y = x[currentTab].getElementsByTagName("input");
+      // A loop that checks every input field in the current tab:
+      for (i = 0; i < y.length; i++) {
+        // If a field is empty...
+        if (y[i].value == "") {
+          // add an "invalid" class to the field:
+          y[i].className += " invalid";
+          // and set the current valid status to false
+          valid = false;
+        }
+      }
+      // If the valid status is true, mark the step as finished and valid:
+      if (valid) {
+        document.getElementsByClassName("step")[currentTab].className += " finish";
+      }
+      return valid; // return the valid status
+    }
+
+    function fixStepIndicator(n) {
+      // This function removes the "active" class of all steps...
+      var i, x = document.getElementsByClassName("step");
+      for (i = 0; i < x.length; i++) {
+        x[i].className = x[i].className.replace(" active", "");
+      }
+      //... and adds the "active" class on the current step:
+      x[n].className += " active";
+    }
+  </script>
+</body>
+
+</html>

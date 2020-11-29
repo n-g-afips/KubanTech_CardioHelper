@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Помощник кардиолога</title>
+<link rel="stylesheet" type="text/css" href="{% static 'cardiohelper/style.css' %}">
+<script type="text/javascript" src=""{% static 'cardiohelper/view.js' %}"></script>
+
+</head>
+
+<body>
+<body id="main_body" >
+
+        <img id="top" src="{% static 'cardiohelper/top.png' %}" alt="">
+        <div id="form_container">
+
+                <h1><a>Помощник кардиолога</a></h1>
+                <form id="form_8082" class="appnitro"  method="post" action="">
+                                        <div class="form_description">
+                        <h2>Помощник кардиолога</h2>
+                        <p>Риск для пациента</p>
+                </div>
+
+	<ul>
+	<li id="li_1">
+            <label class="description" for="element_1"> Риск равен {{ risk }} </label>
+            <div> </div>
+          </li>
+	
+	</ul>
+</body>
