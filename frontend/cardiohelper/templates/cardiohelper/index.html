@@ -43,7 +43,7 @@
     <td>{{ patient.area }}</td>
     <td>{{ patient.birthdate }}</td>
     <td>{{ patient.age }}</td>
-    <td><a href="{#% url 'cardiohelper:detail' patient.id %}"><input type="button" value="ПОДРОБНО"></td>
+    <td><a href="{% url 'cardiohelper:detail' patient.id %}"><input type="button" value="ПОДРОБНО"></td>
     </tr>   
 {% endfor %}
 

@@ -5,7 +5,8 @@ from . import views
 app_name = 'cardiohelper'
 urlpatterns = [
     path('', views.index, name='index'),
-#    path('<int:question_id>/', views.detail, name='detail'),
+    path('form/',views.form, name='form'),
+    path('<id>/', views.detail, name='detail'),
     # ex: /polls/5/results/
 #    path('<int:question_id>/results/', views.results, name='results'),
     # ex: /polls/5/vote/
