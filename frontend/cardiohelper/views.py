@@ -23,7 +23,6 @@ def index(request):
     return HttpResponse(template.render(context, request))
 
 def detail(request,id):
-    patients_list = Passport.objects.order_by('id')[:100]
     file = open('/home/kolyan/hackathon/model.pickle', 'rb')
     model = pickle.load(file)
     risk = model.predict_proba((pd.read_json('/home/kolyan/hackathon/data.json')).loc[id].values)[1]
@@ -32,7 +31,9 @@ def detail(request,id):
 
 
 def form(request):
-    context= {}
+    patients_list = Passport.objects.order_by('id')[:100]
+#    patient = patients_list
+    context= {'patients_list': patients_list,}
     template = loader.get_template('cardiohelper/form.html')
     return HttpResponse(template.render(context, request))
 
